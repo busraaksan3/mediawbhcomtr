@@ -1,0 +1,10 @@
+Options +FollowSymLinks 
+RewriteEngine on 
+#rewritebase / 
+RewriteRule ^index$ index.php [L,NC]
+RewriteRule ^hakkimizda$ hakkimizda.php [L,NC]
+RewriteRule ^iletisim$ iletisim.php [L,NC]
+
+
+
+ErrorDocument 404 404.html
