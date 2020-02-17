@@ -22,12 +22,20 @@ $paketsor->execute();
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <input type="text" id="first-name" name="paket_ad"  required="required" placeholder="Başlık giriniz" class="form-control col-md-7 col-xs-12">
               </div>
+              </div>
+              <div class="form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">URL <span class="required">*</span>
+              </label>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <input type="text" name="paket_url" readonly class="form-control" placeholder="URL" class="form-control col-md-7 col-xs-12">
+              </div>
             </div>
+            
                <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">Paket içeriklerini seç<span class="required">*</span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                 <select multiple="" class="form-control" name="id">
+                 <select multiple="" class="form-control" name="paket_icerik[]">
                   <?php 
                   $paketiceriksor=$db->prepare("SELECT * FROM paket_icerikleri order by id ASC");
                   $paketiceriksor->execute();
@@ -43,7 +51,7 @@ $paketsor->execute();
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Paket Fiyatı <span class="required">*</span>
               </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <input type="text" id="first-name" name="paket_url"   placeholder="Paket Fiyatını giriniz" class="form-control col-md-7 col-xs-12">
+                <input type="text" name="paket_fiyat"   placeholder="Paket Fiyatını giriniz" class="form-control col-md-7 col-xs-12">
               </div>
             </div>                        
 

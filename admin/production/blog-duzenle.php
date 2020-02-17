@@ -5,7 +5,6 @@ $blogsor=$db->prepare("SELECT * FROM blog where blog_id=:id");
 $blogsor->execute(array(
   'id' => $_GET['blog_id']
   ));
-
 $blogcek=$blogsor->fetch(PDO::FETCH_ASSOC);
 ?>  
 <div class="right_col" role="main">

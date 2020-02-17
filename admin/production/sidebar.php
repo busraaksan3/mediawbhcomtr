@@ -4,13 +4,22 @@
                 <h3>Genel</h3>
                 <ul class="nav side-menu">
                   <li><a href="index.php"><i class="fa fa-home"></i> Anasayfa</a></li>
+                  <li><a><i class="fa fa-cog"></i> Genel ayarlar <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="site-ayar.php">Site ayarları</a></li>
+                      <li><a href="api-ayarlar.php">Api ayarları</a></li>
+                      <li><a href="mail-ayar.php">Mail ayarları</a></li>
+                      <li><a href="sosyal-ayar.php">Sosyal Medya Yönetimi</a></li>
+                      <li><a href="iletisim-ayarlar.php">İletişim</a></li>
+                    </ul>
+                  </li>
                   <li><a href="menu.php"><i class="fa fa-list"></i> Menü</a> </li>
-                  <li><a><i class="fa fa-file-image-o"></i> Slider</a></li>
+                  <li><a href="slider.php"><i class="fa fa-file-image-o"></i> Slider</a></li>
                   <li><a href="referans.php"><i class="fa fa-group"></i> Referanslar</a></li>
                   <li><a href="paketlerimiz.php"><i class="fa fa-desktop"></i> Paketlerimiz</a></li>
                   <li><a href="blog.php"><i class="fa fa-edit"></i> Blog </a></li>  
                   <li><a href="yonetim.php"><i class="fa fa-cogs"></i> Geçmiş İşlemler </a></li>  
-                  <li><a><i class="fa fa-envelope"></i> İletişim </a></li>
+                  
 
                 </div>
               </div>
